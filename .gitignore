@@ -1,0 +1,13 @@
+node_modules
+*.swp
+*.swo
+class*-archived
+class01/
+class02/
+class03/
+class04/
+class05/
+class05b/
+class06/
+class07/
+class13-review/
