@@ -1,0 +1,25 @@
+Welcome to by BMO fan site!!!!!
+
+{{#if flag}}
+<h2>flagged!</h2>
+		{{#each cats}}
+		<p>{{this.name}} {{this.lives}}</p>
+		<p>{{name}} {{lives}}</p>
+		{{/each}}
+
+<!-- "this" will refer to current element in iteration-->
+{{/if}}
+
+<!-- name the current element by using as |name| syntax -->
+{{#each numbers}}
+<p>{{this}}</p>
+{{/each}}
+
+
+
+{{#each numbers as |n|}}
+<p>{{n}}</p>
+{{/each}}
+
+<p>{{foo}}</p>
+<p>{{evil}}</p>
