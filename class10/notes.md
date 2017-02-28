@@ -1,3 +1,6 @@
+Class 10 - GET, POST, forms, templating, storing data 
+=====
+
 Most comments are in comments in `scratch.js`
 -----
 
@@ -14,7 +17,10 @@ by using query string parameters:
     * denoted by ?name=value&otherName=otherValue
 * whenever you type something in the url bar your browser automatically issues a GET request
 
-instead of url hacking, you an create a form that allows a user to send query string parameters by filling out user interface elements
+Forms
+-----
+
+Instead of url hacking, you an create a form that allows a user to send query string parameters by filling out user interface elements
 
 ```
 <form method="GET" action="">
@@ -24,6 +30,7 @@ instead of url hacking, you an create a form that allows a user to send query st
 * action = where you want to go, by default, this is the current path
 
 To get your browser to issue an http request:
+
 1. type something url bar (always GET)
 2. submit a form (depends on the method attribute)
     * GET

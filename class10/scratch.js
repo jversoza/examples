@@ -121,9 +121,11 @@ app.get('/get-form-demo-action', (req, res) => {
 // you'll need a few routes for this:
 // 1. route to handle a GET (get the form)
 // 2. route to handle a POST (handling the post request from the form)
+
+// in memory data store (goes away after server restart!)
 const foos = [];
 
-// redners the POST form (note method="POST" action="", which means send
+// renders the POST form (note method="POST" action="", which means send
 // a POST to this url, /post-demo, when the form is submitted)
 app.get('/post-demo', (req, res) => {
   res.render('postDemo', {foos: foos});
