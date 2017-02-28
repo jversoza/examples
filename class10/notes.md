@@ -1,26 +1,33 @@
-getting data from the user
+Most comments are in comments in `scratch.js`
+-----
 
-GET query string parameters in a url
+* run scratch.js: nodemon scratch.js
+* try various urls in browser: localhost:8080/get-demo
 
-when the client makes a GET request, it's possible to send
-data along with the request in the url
-by using query string parameters
 
-denoted by ?name=value&otherName=otherValue
+Getting data from the user
+-----
 
-whenever you type something in the url bar your browser automatically issues a GET request
+* data can be sent by GET query string parameters in a url
+* when the client makes a GET request, it's possible to send data along with the request in the url
+by using query string parameters:
+    * denoted by ?name=value&otherName=otherValue
+* whenever you type something in the url bar your browser automatically issues a GET request
 
 instead of url hacking, you an create a form that allows a user to send query string parameters by filling out user interface elements
 
+```
 <form method="GET" action="">
-method = GET, POST, etc. <-- these are the only two that really work
-action = where you want to go, by default, this is the current path
-
 </form>
+```
+* method = GET, POST, etc. <-- these are the only two that really work
+* action = where you want to go, by default, this is the current path
 
-to get your browser to issue an http request:
+To get your browser to issue an http request:
 1. type something url bar (always GET)
 2. submit a form (depends on the method attribute)
+    * GET
+    * POST
 
 
 
