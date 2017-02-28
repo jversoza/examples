@@ -29,53 +29,33 @@ To get your browser to issue an http request:
     * GET
     * POST
 
+Templating
+-----
 
+by default using {{ }}'s ... will escape special characters in html with the appropriate html entity
 
-
-
-
-
-by default
-
-using {{ }}'s ... will escape special characters in html
-with the appropriate html entity
-
-this prevents tag injection
-prevents javascript injection attacks
+* this prevents tag injection
+* prevents javascript injection attacks
 
 layout.hbs ... usually contains triple curlies so that < and > are not escaped (assumes that your template has tags that you interpreted as tags)
 
+GET vs POST
+-----
 
-web framework - express
-pretty to homework 3
+* GET - specifically for retrieving data only
+    * data shows up in query string
+* POST - for creating data (modifying data)
+    * data is in the request body
+    * to get at POST data.... use middleware called body-parser
+    * body-parser puts names and values in req.body prop
 
-* routing
-* static files
-* templating
+Example POST request
+-----
 
-GET - specifically for retrieving data only
-* data shows up in query string
-
-POST - for creating data (modifying data)
-* data is in the request body
-
-login == creating an authenticated session (it's not reading something)
-
-to get at POST data.... use middleware called body-parser
-
-post request
-=====
+```
 POST /login HTTP/1.1
 Content-Type: www-form-urlencoded
 
 username=jjv222&password=somepassword
-
-body-parser puts names and values in req.body prop
-
-
-
-
-
-
-
+```
 
