@@ -29,8 +29,8 @@ names.forEach(sayHello);
 
         
 
+/*
 a function that takes a function as an argument (original) and returns a new function by wrapping the original function in a function and returning that
-
 
 function decorator(f) {
     function g(...args) {
@@ -43,6 +43,9 @@ function decorator(f) {
     }
     return  g;
 }
+*/
+
+
 
 
 
