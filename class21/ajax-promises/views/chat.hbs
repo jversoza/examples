@@ -1,0 +1,13 @@
+<p>
+Pressing Send will POST message and save to in-memory data store
+</p>
+<p>
+You'll have to refresh to see the saved message since adding sent message wasn't implemented
+</p>
+message: <input id="message" type="text" name="message" value="">	
+<button id="btn">Send Message</button>
+
+{{#each messages as |m|}}
+<p>{{m}}</p>
+{{/each}}
+<script src="javascripts/chat.js"></script>
